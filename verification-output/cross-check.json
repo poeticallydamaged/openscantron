@@ -1,0 +1,132 @@
+{
+  "total": 25,
+  "passed": 25,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "pdf: blank sheet has 3 pages",
+      "passed": true,
+      "detail": "3"
+    },
+    {
+      "name": "pdf: blank sheet title extracted",
+      "passed": true,
+      "detail": "OPEN SCANTRON ANSWER SHEET\nStudent Name: ___________________"
+    },
+    {
+      "name": "pdf: blank sheet includes template code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pdf: blank sheet metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pdf: individual archive has 2 pages",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "pdf: archive page 1 embeds the original image",
+      "passed": true,
+      "detail": "['/Im0']"
+    },
+    {
+      "name": "pdf: archive page 1 uses lossless original JPEG",
+      "passed": true,
+      "detail": "/DCTDecode"
+    },
+    {
+      "name": "pdf: archive page 1 has no rotation",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "pdf: archive page 1 image matches original JPEG dimensions",
+      "passed": true,
+      "detail": "(16, 24)"
+    },
+    {
+      "name": "pdf: archive page 1 has no text overlays",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "pdf: archive page 2 is clearly labelled",
+      "passed": true,
+      "detail": "PAGE 2: PERSPECTIVE-CORRECTED OMR PROCESSING IMAGE (NOT THE "
+    },
+    {
+      "name": "pdf: batch archive has 3 pages",
+      "passed": true,
+      "detail": "3"
+    },
+    {
+      "name": "pdf: batch page metadata",
+      "passed": true,
+      "detail": "EXAM exam-1 | BATCH batch-1 | PAGE 1 | STUDENT 2026-001 | SUBMISSION sub-1"
+    },
+    {
+      "name": "pdf: report renders KPI text",
+      "passed": true,
+      "detail": "EXAM PERFORMANCE REPORT\nExamination: Midterm, \"A\"    Subject: Mathematics\nGenera"
+    },
+    {
+      "name": "qr: OpenCV decodes Kotlin QR metadata",
+      "passed": true,
+      "detail": "OMR1|TPL-A020-V1-000EXAM1|v1|exam-1|20|ABCD"
+    },
+    {
+      "name": "csv: wide_sample.csv has UTF-8 BOM",
+      "passed": true,
+      "detail": "476"
+    },
+    {
+      "name": "csv: wide header has Q001..Q007",
+      "passed": true,
+      "detail": "['submission_id', 'exam_id', 'exam_title', 'subject', 'student_id', 'student_name', 'section', 'exam_date', 'scanned_at', 'answer_key_version', 'batch_id', 'grading_status', 'Q001', 'Q002', 'Q003', 'Q004', 'Q005', 'Q006', 'Q007', 'correct_count']"
+    },
+    {
+      "name": "csv: wide has 1 data row",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "csv: uncertain state is explicit",
+      "passed": true,
+      "detail": "['A', 'B', 'BLANK', 'A', 'A', 'A', 'A', '5']"
+    },
+    {
+      "name": "csv: quoted exam title survived",
+      "passed": true,
+      "detail": "Midterm, \"A\""
+    },
+    {
+      "name": "csv: recognition_audit_sample.csv has UTF-8 BOM",
+      "passed": true,
+      "detail": "432"
+    },
+    {
+      "name": "csv: audit is long format",
+      "passed": true,
+      "detail": "6"
+    },
+    {
+      "name": "backup: manifest lists all files",
+      "passed": true,
+      "detail": "8"
+    },
+    {
+      "name": "backup: every entry checksum matches",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "backup: database included",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

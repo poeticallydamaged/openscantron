@@ -1,0 +1,59 @@
+%PDF-1.4
+%OpenScantron-1
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1537 >>
+stream
+BT /F2 17.000 Tf 0.000 g 46.000 795.890 Td (EXAM PERFORMANCE REPORT) Tj ET
+BT /F1 10.000 Tf 0.000 g 46.000 771.890 Td (Examination: Midterm, "A"    Subject: Mathematics) Tj ET
+BT /F3 9.000 Tf 0.000 g 46.000 756.890 Td (Generated: 2025-10-09 08:53 UTC) Tj ET
+BT /F1 10.000 Tf 0.000 g 46.000 736.890 Td (Submissions: 1   Max points: 5.00) Tj ET
+BT /F1 10.000 Tf 0.000 g 46.000 721.890 Td (Mean: 3.00   Median: 3.00   High: 3.00   Low: 3.00) Tj ET
+BT /F1 10.000 Tf 0.000 g 46.000 706.890 Td (Pass: 1 \(100.0%\)   Fail: 0 \(0.0%\)   Pending review: 0) Tj ET
+BT /F1 10.000 Tf 0.000 g 46.000 691.890 Td (Archived PDFs: 1   Synced CSV datasets: 2) Tj ET
+BT /F2 12.000 Tf 0.000 g 46.000 667.890 Td (ITEM ANALYSIS  \(difficulty index p = correct / attempted\)) Tj ET
+BT /F3 9.000 Tf 0.000 g 46.000 649.890 Td (Q    Key   Correct   Incorrect   Blank   Invalid   Pending   Top distractor   p) Tj ET
+BT /F3 8.000 Tf 0.000 g 46.000 635.890 Td (1    A     100.0%   0.0%       0.0%    0.0%      0.0%      -               1.00) Tj ET
+BT /F3 8.000 Tf 0.000 g 46.000 623.890 Td (2    A     0.0%     100.0%     0.0%    0.0%      0.0%      B               0.00) Tj ET
+BT /F3 8.000 Tf 0.000 g 46.000 611.890 Td (3    A     0.0%     0.0%       100.0%  0.0%      0.0%      -               n/a) Tj ET
+BT /F3 8.000 Tf 0.000 g 46.000 599.890 Td (4    A     100.0%   0.0%       0.0%    0.0%      0.0%      -               1.00) Tj ET
+BT /F3 8.000 Tf 0.000 g 46.000 587.890 Td (5    A     100.0%   0.0%       0.0%    0.0%      0.0%      -               1.00) Tj ET
+
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+8 0 obj
+<< /Title (Exam report: Midterm, "A") /Author (OpenScantron offline grader) /Producer (OpenScantron PortablePdfWriter) >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000025 00000 n 
+0000000074 00000 n 
+0000000131 00000 n 
+0000000285 00000 n 
+0000001874 00000 n 
+0000001971 00000 n 
+0000002073 00000 n 
+0000002168 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R /Info 8 0 R >>
+startxref
+2305
+%%EOF

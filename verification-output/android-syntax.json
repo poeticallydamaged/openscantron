@@ -1,0 +1,12 @@
+{
+  "type": "standalone_kotlin_syntax_check",
+  "is_android_build": false,
+  "expected_kotlinc_exit_nonzero_without_android_dependencies": true,
+  "kotlinc_exit": 1,
+  "source_count": 66,
+  "compiler_error_lines": 3801,
+  "unresolved_reference_lines": 3174,
+  "syntax_like_errors": [],
+  "syntax_check_passed": true,
+  "log": "/home/user/openscantron/verification-output/android-syntax.log"
+}

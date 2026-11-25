@@ -1,0 +1,2 @@
+﻿submission_id,exam_id,exam_title,subject,student_id,student_name,section,exam_date,scanned_at,answer_key_version,batch_id,grading_status,Q001,Q002,Q003,Q004,Q005,Q006,Q007,correct_count,incorrect_count,blank_count,invalid_count,pending_review_count,score,max_score,percentage,passing_status
+sub-1,exam-1,"Midterm, ""A""",Mathematics,2026-001,Juan Dela Cruz,Section A,2025-10-09,2025-10-09T08:53:20Z,1,batch-1,GRADED,A,B,BLANK,A,A,A,A,5,1,1,0,0,6.0000,7.0000,80.0000,PASS

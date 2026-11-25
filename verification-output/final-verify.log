@@ -1,0 +1,81 @@
+== compiling 38 Kotlin source files ==
+== running JVM test suite ==
+PASS  core: JSON codec round-trip with escapes and unicode (27 ms)
+PASS  core: RFC 4180 CSV escaping, embedded newlines and BOM (7 ms)
+PASS  core: atomic write leaves no temp file and SHA-256 is stable (25 ms)
+PASS  core: OmrResult maps errors without swallowing AppError types (1 ms)
+PASS  domain: exam presets, custom counts, duplicate and archive (10 ms)
+PASS  domain: answer key versioning and controlled regrade request (2 ms)
+PASS  domain: grading equal, weighted, deductions, partial credit, pending (2 ms)
+PASS  domain: item analysis KPIs and difficulty index (2 ms)
+PASS  domain: duplicate detection requires an explicit decision (2 ms)
+PASS  domain: roster CSV import detects duplicates and invalid rows (3 ms)
+PASS  domain: batch counters compose without loss (0 ms)
+PASS  export: portable QR matches a standard decoder contract and never fabricates tampered payloads (15 ms)
+PASS  export: layout JSON is deterministic and normalized to marker centroids (34 ms)
+PASS  export: printable sheet PDF has 4 markers, QR and Q001..QNNN geometry (103 ms)
+PASS  export: report PDFs render real KPI and item figures (17 ms)
+PASS  export: wide CSV is 1 row per student with dynamic Q columns and explicit states (8 ms)
+PASS  export: recognition audit CSV is long format with correction timestamps (6 ms)
+PASS  export: consolidated multi-exam CSV pads heterogeneous question counts (4 ms)
+PASS  export: atomic dataset synchronization increments version and verifies integrity (17 ms)
+PASS  archive: individual PDF preserves original on page 1 with checksum and UNASSIGNED naming (21 ms)
+PASS  archive: PDF generation failure is retryable and never drops the scan (8 ms)
+PASS  archive: consolidated batch PDF is one student per page with page metadata (12 ms)
+PASS  archive: storage usage and explicit raw-image deletion (4 ms)
+PASS  backup: create, restore, checksum tamper detection and relational validation (30 ms)
+PASS  omr: homography, marker geometry and image quality math (7 ms)
+PASS  omr: threshold calibration derives bounds from measured ROI fills (1233 ms)
+OMR metrics: sheets=128, registration_success=128, registration_rate=1.0, single_mark_total=1489, single_mark_correct=1489, single_mark_accuracy=1.0, blank_total=573, blank_correct=573, blank_accuracy=1.0, multiple_total=131, multiple_correct=131, multiple_accuracy=1.0, ambiguous_total=367, ambiguous_flagged=367, ambiguous_flag_rate=1.0, student_id_correct=128, student_id_accuracy=1.0, failures=0
+PASS  omr: synthetic accuracy suite over 16 adverse conditions (24110 ms)
+
+27/27 tests passed; report: verification-output/jvm-results.json
+== independent cross-check (pypdf / OpenCV QR / Python csv / zipfile) ==
+PASS  pdf: blank sheet has 3 pages -> 3
+PASS  pdf: blank sheet title extracted -> OPEN SCANTRON ANSWER SHEET
+Student Name: ___________________
+PASS  pdf: blank sheet includes template code
+PASS  pdf: blank sheet metadata
+PASS  pdf: individual archive has 2 pages -> 2
+PASS  pdf: archive page 1 embeds the original image -> ['/Im0']
+PASS  pdf: archive page 1 uses lossless original JPEG -> /DCTDecode
+PASS  pdf: archive page 1 has no rotation
+PASS  pdf: archive page 1 image matches original JPEG dimensions -> (16, 24)
+PASS  pdf: archive page 1 has no text overlays
+PASS  pdf: archive page 2 is clearly labelled -> PAGE 2: PERSPECTIVE-CORRECTED OMR PROCESSING IMAGE (NOT THE 
+PASS  pdf: batch archive has 3 pages -> 3
+PASS  pdf: batch page metadata -> EXAM exam-1 | BATCH batch-1 | PAGE 1 | STUDENT 2026-001 | SUBMISSION sub-1
+PASS  pdf: report renders KPI text -> EXAM PERFORMANCE REPORT
+Examination: Midterm, "A"    Subject: Mathematics
+Genera
+PASS  qr: OpenCV decodes Kotlin QR metadata -> OMR1|TPL-A020-V1-000EXAM1|v1|exam-1|20|ABCD
+PASS  csv: wide_sample.csv has UTF-8 BOM -> 476
+PASS  csv: wide header has Q001..Q007 -> ['submission_id', 'exam_id', 'exam_title', 'subject', 'student_id', 'student_name', 'section', 'exam_date', 'scanned_at', 'answer_key_version', 'batch_id', 'grading_status', 'Q001', 'Q002', 'Q003', 'Q004', 'Q005', 'Q006', 'Q007', 'correct_count']
+PASS  csv: wide has 1 data row -> 2
+PASS  csv: uncertain state is explicit -> ['A', 'B', 'BLANK', 'A', 'A', 'A', 'A', '5']
+PASS  csv: quoted exam title survived -> Midterm, "A"
+PASS  csv: recognition_audit_sample.csv has UTF-8 BOM -> 432
+PASS  csv: audit is long format -> 6
+PASS  backup: manifest lists all files -> 8
+PASS  backup: every entry checksum matches
+PASS  backup: database included
+
+25/25 independent cross-checks passed
+== static 24-screen navigation / dead-button audit ==
+{
+  "checks": {
+    "screen_composables": 24,
+    "screens_in_nav_host": 24,
+    "screens_with_app_screen": 24,
+    "screen_files_with_ui_state": 4,
+    "route_constants": 24,
+    "nav_host_destinations": 24,
+    "standard_buttons": 166,
+    "export_buttons": 19,
+    "buttons_with_non_empty_action": 185,
+    "nav_call_arity_matches": 24
+  },
+  "passed": true,
+  "failures": []
+}
+== verification complete ==

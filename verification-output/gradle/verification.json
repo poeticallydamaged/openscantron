@@ -1,0 +1,44 @@
+{
+  "executed": true,
+  "commands": [
+    {
+      "task": "assembleDebug",
+      "command": "./gradlew assembleDebug",
+      "exit_code": 1,
+      "duration_seconds": 0,
+      "log": "/home/user/openscantron/verification-output/gradle/assembleDebug.log",
+      "first_error": "Attempt 1/1 failed. Reason: Remote host terminated the handshake",
+      "log_bytes": 1991
+    },
+    {
+      "task": "testDebugUnitTest",
+      "command": "./gradlew testDebugUnitTest",
+      "exit_code": 1,
+      "duration_seconds": 1,
+      "log": "/home/user/openscantron/verification-output/gradle/testDebugUnitTest.log",
+      "first_error": "Attempt 1/1 failed. Reason: Remote host terminated the handshake",
+      "log_bytes": 1991
+    },
+    {
+      "task": "lintDebug",
+      "command": "./gradlew lintDebug",
+      "exit_code": 1,
+      "duration_seconds": 0,
+      "log": "/home/user/openscantron/verification-output/gradle/lintDebug.log",
+      "first_error": "Attempt 1/1 failed. Reason: Remote host terminated the handshake",
+      "log_bytes": 1991
+    },
+    {
+      "task": "connectedDebugAndroidTest",
+      "command": "./gradlew connectedDebugAndroidTest",
+      "exit_code": 1,
+      "duration_seconds": 0,
+      "log": "/home/user/openscantron/verification-output/gradle/connectedDebugAndroidTest.log",
+      "first_error": "Attempt 1/1 failed. Reason: Remote host terminated the handshake",
+      "log_bytes": 1991
+    }
+  ],
+  "all_passed": false,
+  "environment_log": "verification-output/gradle/environment.log",
+  "network_log": "verification-output/gradle/network.log"
+}
