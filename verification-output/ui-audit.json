@@ -1,0 +1,1816 @@
+{
+  "type": "static_source_audit",
+  "not_android_build_or_device_test": true,
+  "checks": {
+    "screen_composables": 24,
+    "screens_in_nav_host": 24,
+    "screens_with_app_screen": 24,
+    "screen_files_with_ui_state": 4,
+    "route_constants": 24,
+    "nav_host_destinations": 24,
+    "standard_buttons": 166,
+    "export_buttons": 19,
+    "buttons_with_non_empty_action": 185,
+    "nav_call_arity_matches": 24
+  },
+  "failures": [],
+  "passed": true,
+  "screens": [
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "name": "DashboardScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "name": "ExaminationListScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "name": "CreateExaminationScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "name": "EditExaminationScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "name": "AnswerKeyEditorScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "name": "StudentRosterScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "name": "StudentImportScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "name": "TemplateConfigurationScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "name": "AnswerSheetPreviewScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "name": "ScannedAnswerArchivesScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "name": "PdfDocumentViewerScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "name": "CsvDatasetsManagerScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "name": "CsvDatasetPreviewScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "name": "ExportSharingHubScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "name": "SettingsScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "name": "BackupRestoreScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "name": "ExaminationResultsOverviewScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "name": "StudentResultDetailsScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "name": "ItemAnalysisScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "name": "ScanningCameraScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "name": "CapturedImageReviewScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "name": "OmrProcessingStatusScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "name": "RecognitionVerificationScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "name": "BatchScanningSummaryScreen",
+      "in_nav_host": true,
+      "app_screen": true,
+      "ui_state": true
+    }
+  ],
+  "buttons": [
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 48,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 49,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 50,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 55,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 58,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 61,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 65,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 68,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 71,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 82,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 83,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 84,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 110,
+      "kind": "material",
+      "name": "FloatingActionButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 128,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 129,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 130,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 133,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 134,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 135,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 136,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 157,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 163,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 164,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 182,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 183,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 184,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 185,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 208,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 217,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 220,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 238,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 239,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 242,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 246,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 247,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 284,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 289,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 296,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 310,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 315,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 328,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 331,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 356,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 373,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 419,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 439,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 448,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 449,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 495,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 496,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 497,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 498,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 499,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 502,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 504,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 507,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 297,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DashboardScreens.kt",
+      "line": 357,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 51,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 52,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 53,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 65,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 69,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 73,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 77,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 78,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 84,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 93,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 95,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 112,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 114,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 117,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 118,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 119,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 123,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 144,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 145,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 146,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 158,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 162,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 166,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 175,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 199,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 200,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 201,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 217,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 252,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 253,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 254,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 328,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 329,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 333,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 337,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 338,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 340,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 393,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 394,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 397,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 398,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 399,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 402,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 403,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 404,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 414,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 417,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 463,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 466,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 470,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 480,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 486,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 489,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 490,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 269,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 278,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 287,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 293,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 302,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 311,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 323,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/DocumentsScreens.kt",
+      "line": 456,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 61,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 64,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 65,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 69,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 70,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 71,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 95,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 98,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 101,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 112,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 171,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 174,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 180,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 181,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 227,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 228,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 229,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 74,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 77,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 80,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 167,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 222,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ResultsScreens.kt",
+      "line": 224,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 93,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 124,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 130,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 133,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 134,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 137,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 138,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 140,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 181,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 182,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 183,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 186,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 190,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 228,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 231,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 232,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 234,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 244,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 245,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 246,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 249,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 288,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 295,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 323,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 334,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 335,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 341,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 342,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 344,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 375,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 378,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 379,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 380,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 392,
+      "kind": "material",
+      "name": "TextButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 338,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/ScanScreens.kt",
+      "line": 371,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/Common.kt",
+      "line": 79,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/screens/Common.kt",
+      "line": 68,
+      "kind": "export",
+      "name": "ExportButton",
+      "action": "produce",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/components/Scaffold.kt",
+      "line": 28,
+      "kind": "material",
+      "name": "IconButton",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/components/Scaffold.kt",
+      "line": 44,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/components/Scaffold.kt",
+      "line": 50,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    },
+    {
+      "file": "app/src/main/java/com/omrgrader/presentation/components/Scaffold.kt",
+      "line": 51,
+      "kind": "material",
+      "name": "Button",
+      "action": "onClick",
+      "passed": true
+    }
+  ],
+  "nav_call_arity": [
+    {
+      "screen": "DashboardScreen",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "screen": "ExaminationListScreen",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "screen": "CreateExaminationScreen",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "screen": "EditExaminationScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "AnswerKeyEditorScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "StudentRosterScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "StudentImportScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "TemplateConfigurationScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "AnswerSheetPreviewScreen",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    },
+    {
+      "screen": "ScannedAnswerArchivesScreen",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "screen": "PdfDocumentViewerScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "CsvDatasetsManagerScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "CsvDatasetPreviewScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "ExportSharingHubScreen",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    },
+    {
+      "screen": "SettingsScreen",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "screen": "BackupRestoreScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "ExaminationResultsOverviewScreen",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    },
+    {
+      "screen": "StudentResultDetailsScreen",
+      "expected": 5,
+      "actual": 5,
+      "passed": true
+    },
+    {
+      "screen": "ItemAnalysisScreen",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    },
+    {
+      "screen": "ScanningCameraScreen",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    },
+    {
+      "screen": "CapturedImageReviewScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "OmrProcessingStatusScreen",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "screen": "RecognitionVerificationScreen",
+      "expected": 7,
+      "actual": 7,
+      "passed": true
+    },
+    {
+      "screen": "BatchScanningSummaryScreen",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    }
+  ]
+}

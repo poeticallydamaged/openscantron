@@ -1,0 +1,6 @@
+﻿submission_id,exam_id,student_id,question_number,detected_answer,final_answer,confidence,classification,manually_corrected,corrected_at
+sub-1,exam-1,2026-001,1,A,A,0.9100,SINGLE_MARK,false,
+sub-1,exam-1,2026-001,2,A,B,0.9100,SINGLE_MARK,true,2025-10-09T08:53:20Z
+sub-1,exam-1,2026-001,3,A,BLANK,0.9100,BLANK,false,
+sub-1,exam-1,2026-001,4,A,A,0.9100,SINGLE_MARK,false,
+sub-1,exam-1,2026-001,5,A,A,0.9100,SINGLE_MARK,false,

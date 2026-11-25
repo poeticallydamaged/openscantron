@@ -1,0 +1,958 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "7196f619ef503e6588ab28a6c06f6eaf",
+    "entities": [
+      {
+        "tableName": "examinations",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `subject` TEXT NOT NULL, `description` TEXT NOT NULL, `date` INTEGER NOT NULL, `total_questions` INTEGER NOT NULL, `total_points` REAL NOT NULL, `scoring_configuration` TEXT NOT NULL, `active_template_id` TEXT, `active_answer_key_version_id` TEXT, `is_archived` INTEGER NOT NULL, `created_at` INTEGER NOT NULL, `updated_at` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "subject",
+            "columnName": "subject",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalQuestions",
+            "columnName": "total_questions",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalPoints",
+            "columnName": "total_points",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scoringConfiguration",
+            "columnName": "scoring_configuration",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "activeTemplateId",
+            "columnName": "active_template_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "activeAnswerKeyVersionId",
+            "columnName": "active_answer_key_version_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isArchived",
+            "columnName": "is_archived",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updated_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "students",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `student_number` TEXT NOT NULL, `full_name` TEXT NOT NULL, `section` TEXT NOT NULL, `additional_information` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "studentNumber",
+            "columnName": "student_number",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fullName",
+            "columnName": "full_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "section",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "additionalInformation",
+            "columnName": "additional_information",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_students_student_number",
+            "unique": true,
+            "columnNames": [
+              "student_number"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_students_student_number` ON `${TABLE_NAME}` (`student_number`)"
+          },
+          {
+            "name": "index_students_section",
+            "unique": false,
+            "columnNames": [
+              "section"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_students_section` ON `${TABLE_NAME}` (`section`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "answer_sheet_templates",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `template_code` TEXT NOT NULL, `exam_id` TEXT NOT NULL, `page_size` TEXT NOT NULL, `question_count` INTEGER NOT NULL, `answer_choices` TEXT NOT NULL, `layout_definition` TEXT NOT NULL, `version` INTEGER NOT NULL, `created_at` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "templateCode",
+            "columnName": "template_code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "examId",
+            "columnName": "exam_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pageSize",
+            "columnName": "page_size",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionCount",
+            "columnName": "question_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "answerChoices",
+            "columnName": "answer_choices",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "layoutDefinition",
+            "columnName": "layout_definition",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_answer_sheet_templates_template_code",
+            "unique": true,
+            "columnNames": [
+              "template_code"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_answer_sheet_templates_template_code` ON `${TABLE_NAME}` (`template_code`)"
+          },
+          {
+            "name": "index_answer_sheet_templates_exam_id",
+            "unique": false,
+            "columnNames": [
+              "exam_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_answer_sheet_templates_exam_id` ON `${TABLE_NAME}` (`exam_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "examinations",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "exam_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "answer_keys",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `exam_id` TEXT NOT NULL, `version` INTEGER NOT NULL, `answers` TEXT NOT NULL, `scoring_rules` TEXT NOT NULL, `created_at` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "examId",
+            "columnName": "exam_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "answers",
+            "columnName": "answers",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scoringRules",
+            "columnName": "scoring_rules",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_answer_keys_exam_id_version",
+            "unique": true,
+            "columnNames": [
+              "exam_id",
+              "version"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_answer_keys_exam_id_version` ON `${TABLE_NAME}` (`exam_id`, `version`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "examinations",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "exam_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "scan_batches",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `exam_id` TEXT NOT NULL, `status` TEXT NOT NULL, `total_scanned` INTEGER NOT NULL, `total_processed` INTEGER NOT NULL, `total_pending` INTEGER NOT NULL, `created_at` INTEGER NOT NULL, `updated_at` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "examId",
+            "columnName": "exam_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalScanned",
+            "columnName": "total_scanned",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalProcessed",
+            "columnName": "total_processed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalPending",
+            "columnName": "total_pending",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updated_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_scan_batches_exam_id",
+            "unique": false,
+            "columnNames": [
+              "exam_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_scan_batches_exam_id` ON `${TABLE_NAME}` (`exam_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "examinations",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "exam_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "submissions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `exam_id` TEXT NOT NULL, `student_id` TEXT, `template_id` TEXT NOT NULL, `answer_key_version_id` TEXT NOT NULL, `batch_id` TEXT NOT NULL, `recognized_answers` TEXT NOT NULL, `final_answers` TEXT NOT NULL, `score` REAL, `percentage` REAL, `grading_status` TEXT NOT NULL, `processing_status` TEXT NOT NULL, `image_fingerprint` TEXT NOT NULL, `scanned_at` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "examId",
+            "columnName": "exam_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "studentId",
+            "columnName": "student_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "templateId",
+            "columnName": "template_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "answerKeyVersionId",
+            "columnName": "answer_key_version_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "batchId",
+            "columnName": "batch_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recognizedAnswers",
+            "columnName": "recognized_answers",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "finalAnswers",
+            "columnName": "final_answers",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "score",
+            "columnName": "score",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "percentage",
+            "columnName": "percentage",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "gradingStatus",
+            "columnName": "grading_status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "processingStatus",
+            "columnName": "processing_status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageFingerprint",
+            "columnName": "image_fingerprint",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scannedAt",
+            "columnName": "scanned_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_submissions_exam_id",
+            "unique": false,
+            "columnNames": [
+              "exam_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_submissions_exam_id` ON `${TABLE_NAME}` (`exam_id`)"
+          },
+          {
+            "name": "index_submissions_student_id",
+            "unique": false,
+            "columnNames": [
+              "student_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_submissions_student_id` ON `${TABLE_NAME}` (`student_id`)"
+          },
+          {
+            "name": "index_submissions_batch_id",
+            "unique": false,
+            "columnNames": [
+              "batch_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_submissions_batch_id` ON `${TABLE_NAME}` (`batch_id`)"
+          },
+          {
+            "name": "index_submissions_image_fingerprint",
+            "unique": false,
+            "columnNames": [
+              "image_fingerprint"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_submissions_image_fingerprint` ON `${TABLE_NAME}` (`image_fingerprint`)"
+          },
+          {
+            "name": "index_submissions_exam_id_student_id",
+            "unique": false,
+            "columnNames": [
+              "exam_id",
+              "student_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_submissions_exam_id_student_id` ON `${TABLE_NAME}` (`exam_id`, `student_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "examinations",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "exam_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "students",
+            "onDelete": "SET NULL",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "student_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "answer_sheet_templates",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "template_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "answer_keys",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "answer_key_version_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "scan_batches",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "batch_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "question_recognitions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `submission_id` TEXT NOT NULL, `question_number` INTEGER NOT NULL, `recognized_answer` TEXT NOT NULL, `final_answer` TEXT NOT NULL, `confidence` REAL NOT NULL, `classification` TEXT NOT NULL, `manually_corrected` INTEGER NOT NULL, `correction_note` TEXT NOT NULL DEFAULT '', `corrected_at` INTEGER, `alternatives` TEXT NOT NULL DEFAULT '[]', PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "submissionId",
+            "columnName": "submission_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionNumber",
+            "columnName": "question_number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recognizedAnswer",
+            "columnName": "recognized_answer",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "finalAnswer",
+            "columnName": "final_answer",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "confidence",
+            "columnName": "confidence",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "classification",
+            "columnName": "classification",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "manuallyCorrected",
+            "columnName": "manually_corrected",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "correctionNote",
+            "columnName": "correction_note",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "correctedAt",
+            "columnName": "corrected_at",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "alternatives",
+            "columnName": "alternatives",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'[]'"
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_question_recognitions_submission_id_question_number",
+            "unique": true,
+            "columnNames": [
+              "submission_id",
+              "question_number"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_question_recognitions_submission_id_question_number` ON `${TABLE_NAME}` (`submission_id`, `question_number`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "submissions",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "submission_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "answer_sheet_archives",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `submission_id` TEXT NOT NULL, `original_image_path` TEXT NOT NULL, `pdf_file_path` TEXT NOT NULL, `pdf_file_name` TEXT NOT NULL, `pdf_file_size` INTEGER NOT NULL, `pdf_checksum` TEXT NOT NULL, `generation_status` TEXT NOT NULL DEFAULT 'GENERATED', `generated_at` INTEGER, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "submissionId",
+            "columnName": "submission_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "originalImagePath",
+            "columnName": "original_image_path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pdfFilePath",
+            "columnName": "pdf_file_path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pdfFileName",
+            "columnName": "pdf_file_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pdfFileSize",
+            "columnName": "pdf_file_size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pdfChecksum",
+            "columnName": "pdf_checksum",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "generationStatus",
+            "columnName": "generation_status",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'GENERATED'"
+          },
+          {
+            "fieldPath": "generatedAt",
+            "columnName": "generated_at",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_answer_sheet_archives_submission_id",
+            "unique": true,
+            "columnNames": [
+              "submission_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_answer_sheet_archives_submission_id` ON `${TABLE_NAME}` (`submission_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "submissions",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "submission_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "dataset_archives",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `exam_id` TEXT NOT NULL, `dataset_type` TEXT NOT NULL, `file_path` TEXT NOT NULL, `file_name` TEXT NOT NULL, `file_size` INTEGER NOT NULL, `generation_version` INTEGER NOT NULL, `synchronization_status` TEXT NOT NULL, `record_count` INTEGER NOT NULL, `last_generated_at` INTEGER, `last_error` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "examId",
+            "columnName": "exam_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "datasetType",
+            "columnName": "dataset_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "filePath",
+            "columnName": "file_path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fileName",
+            "columnName": "file_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fileSize",
+            "columnName": "file_size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "generationVersion",
+            "columnName": "generation_version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "synchronizationStatus",
+            "columnName": "synchronization_status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordCount",
+            "columnName": "record_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastGeneratedAt",
+            "columnName": "last_generated_at",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastError",
+            "columnName": "last_error",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_dataset_archives_exam_id_dataset_type",
+            "unique": true,
+            "columnNames": [
+              "exam_id",
+              "dataset_type"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_dataset_archives_exam_id_dataset_type` ON `${TABLE_NAME}` (`exam_id`, `dataset_type`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "examinations",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "childFields": [
+              "exam_id"
+            ],
+            "parentFields": [
+              "id"
+            ],
+            "parentColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table(id,identity_hash) VALUES(42, \"7196f619ef503e6588ab28a6c06f6eaf\")"
+    ]
+  }
+}
